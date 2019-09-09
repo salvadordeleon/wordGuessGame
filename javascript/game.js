@@ -1,5 +1,5 @@
 // make an array of words
-const word = [
+var word = [
   "acura",
   "aston martin",
   "audi",
@@ -41,14 +41,28 @@ const word = [
   "volkswagen",
   "volvo"];
 
-var randNum = Math.floor(Math.random() * word.lenth);
+// choose word randomly
+
+var randNum = Math.floor(Math.random() * word.length);
 var chosenWord = word[randNum];
 var underScore = [];
-var generateUnderscore = () => {
+
+// create underscores based on length of word
+
+var generateunderScore = () => {
 for(var i = 0; i < chosenWord.length; i++){
-    underscore.push('_');
-}
-return underScore;
+    underScore.push('_');
+    }
+    return underScore;
 }
 
-console.log(generateUnderscore());
+console.log(generateunderScore());
+// get users guess
+document.addEventListener('keypress', (event) => {
+    var keycode = event.keyCode;
+    var keyword = String.fromCharCode(keycode);
+    console.log(keyword);
+});
+// check if users guess is correct
+// if right, push to right array
+// if wrong, push to wrong array

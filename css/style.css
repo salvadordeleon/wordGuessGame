@@ -1,35 +1,40 @@
+body {
+background-color: lightgray;
+
+
+}
 header {
 border: 5px solid black;
 font-size: 20px;
 text-align: center;
-margin: 50 auto;
+margin: 15px auto;
 height: 150px;
 width: 80%;
 }
 
 .underscore {
-    border: 5px solid black;
+    border: 5px solid darkblue;
     font-size: 100px;
     text-align: center;
-    margin: 50 auto;
+    margin: 0 auto;
     height: 150px;
     width: 80%;
 }
 
 .rightGuess {
-    border: 5px solid black;
+    border: 5px solid green;
     font-size: 20px;
     text-align: center;
-    margin: 50 auto;
+    margin: 0 auto;
     height: 150px;
     width: 80%;
 }
     
 .wrongGuess {
-        border: 5px solid black;
+        border: 5px solid red;
         font-size: 20px;
         text-align: center;
-        margin: 50 auto;
+        margin: 0 auto;
         height: 150px;
         width: 80%;
 }
