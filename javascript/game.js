@@ -1,5 +1,5 @@
 // make an array of words
-var words = [
+const word = [
   "acura",
   "aston martin",
   "audi",
@@ -39,6 +39,16 @@ var words = [
   "tesla",
   "toyota",
   "volkswagen",
-  "volvo"
-];
+  "volvo"];
 
+var randNum = Math.floor(Math.random() * word.lenth);
+var chosenWord = word[randNum];
+var underScore = [];
+var generateUnderscore = () => {
+for(var i = 0; i < chosenWord.length; i++){
+    underscore.push('_');
+}
+return underScore;
+}
+
+console.log(generateUnderscore());
