@@ -50,27 +50,33 @@ var rightWord = [];
 var wrongWord = [];
 var underScore = [];
 
-// create underscores based on length of word
+//testing
+console.log(chosenWord);
 
+// create underscores based on length of word
 var generateunderScore = () => {
   for (var i = 0; i < chosenWord.length; i++) {
     underScore.push("_");
   }
   return underScore;
 };
-
 console.log(generateunderScore());
+
 // get users guess
-document.addEventListener("keypress", event => {
+document.addEventListener('keypress', event => {
+  console.log(event.key);
   var keyword = String.fromCharCode(event.keycode);
-  if (chosenWord.indexof (keyword) > -1) {
-      //add to rightWord arrays
-      rightWord.push(keyword);
-      console.log(rightWord);
+  console.log(keyword);
+  // if user guess is correct
+  
+  if(chosenWord.indexOf(keyword) > -1); {
+    console.log(true);
+    
+     wrongWord.push(keyword);
+    console.log(wrongWord);
+   
     }
-      else if (wrongWord.push)(keyword);
-      console.log(wrongWord);
-});
-// check if users guess is correct
-// if right, push to right array
-// if wrong, push to wrong array
+  }
+})
+
+
