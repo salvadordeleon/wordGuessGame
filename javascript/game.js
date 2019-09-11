@@ -69,7 +69,7 @@ document.addEventListener('keypress', event => {
   console.log(keyword);
   // if user guess is correct
   
-  if(chosenWord.indexOf(keyword) > -1); {
+  if(chosenWord.indexOf(keyword) > -1) {
     console.log(true);
     
      wrongWord.push(keyword);
@@ -77,6 +77,6 @@ document.addEventListener('keypress', event => {
    
     }
   }
-})
+)
 
 
